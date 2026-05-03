@@ -52,4 +52,4 @@ Why this design is justified:
 ## Linked Artifacts
 - `reports/phase8_implementation.md`
 - `reports/phase9_implementation.md`
-- `outputs/phase9/evaluation_metrics.json`
+- `phase_artifacts/phase9/outputs/evaluation_metrics.json`

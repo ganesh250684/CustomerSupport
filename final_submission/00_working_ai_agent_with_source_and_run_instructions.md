@@ -1,3 +1,14 @@
+# 1) Working AI Agent (with Source and Run Instructions)
+
+This file is self-contained for reviewers.
+
+Referenced markdown sources included below:
+- `final_submission/working_ai_agent.md`
+
+---
+
+## Embedded Content: `final_submission/working_ai_agent.md`
+
 # Working AI Agent
 
 ## System
@@ -25,8 +36,8 @@ Run these from project root `d:/IITM/CustomerSupport`.
 3. Phase 4 (RAG)
 - File: `src/phase4/rag_agent.py`
 - Commands:
-  - `python scripts/run_phase4_indexing.py`
-  - `python scripts/run_phase4_rag_eval.py`
+   - `python scripts/run_phase4_indexing.py`
+   - `python scripts/run_phase4_rag_eval.py`
 
 4. Phase 5 (tools + safeguards)
 - File: `src/phase5/tool_agent.py`
@@ -43,8 +54,8 @@ Run these from project root `d:/IITM/CustomerSupport`.
 7. Phase 8 (deployment runtime)
 - File: `src/phase8/service.py`
 - Commands:
-  - `python -m uvicorn src.phase8.service:app --host 127.0.0.1 --port 8010`
-  - `python scripts/run_phase8_runtime_eval.py`
+   - `python -m uvicorn src.phase8.service:app --host 127.0.0.1 --port 8010`
+   - `python scripts/run_phase8_runtime_eval.py`
 
 8. Phase 9 (evaluation and engineering review)
 - File: `src/phase9/metrics.py`
@@ -53,8 +64,8 @@ Run these from project root `d:/IITM/CustomerSupport`.
 ## How to Run (Local)
 1. Activate environment
 - PowerShell:
-  - Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
-  - . .venv/Scripts/Activate.ps1
+   - Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+   - . .venv/Scripts/Activate.ps1
 
 2. Start deployment-ready API
 - python -m uvicorn src.phase8.service:app --host 127.0.0.1 --port 8010
@@ -65,12 +76,12 @@ Run these from project root `d:/IITM/CustomerSupport`.
 4. Resolve request example
 - POST http://127.0.0.1:8010/resolve
 - JSON body example:
-  {
-    "user_message": "I was charged after cancellation and need help.",
-    "simulate_retrieval_failure": false,
-    "simulate_llm_failure": false,
-    "simulate_tool_failure": false
-  }
+   {
+      "user_message": "I was charged after cancellation and need help.",
+      "simulate_retrieval_failure": false,
+      "simulate_llm_failure": false,
+      "simulate_tool_failure": false
+   }
 
 ## Safety Guarantees Demonstrated
 - Refuses policy-bypass prompts.
@@ -80,8 +91,9 @@ Run these from project root `d:/IITM/CustomerSupport`.
 
 ## Deployment-Readiness Evidence
 - Runtime outputs:
-  - `phase_artifacts/phase8/outputs/deployment_readiness_results.json`
-  - `phase_artifacts/phase8/outputs/latency_error_summary.json`
-  - `phase_artifacts/phase8/outputs/runtime_logs.jsonl`
+   - `phase_artifacts/phase8/outputs/deployment_readiness_results.json`
+   - `phase_artifacts/phase8/outputs/latency_error_summary.json`
+   - `phase_artifacts/phase8/outputs/runtime_logs.jsonl`
 - Runtime comparison report:
-  - `reports/phase8_runtime_comparison.md`
+   - `reports/phase8_runtime_comparison.md`
+

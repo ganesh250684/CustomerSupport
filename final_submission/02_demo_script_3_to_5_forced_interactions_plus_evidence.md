@@ -1,3 +1,14 @@
+# 3) Demo Script (3-5 Forced Interactions)
+
+This file is self-contained for reviewers.
+
+Referenced markdown sources included below:
+- `final_submission/demo_script.md`
+
+---
+
+## Embedded Content: `final_submission/demo_script.md`
+
 # Demo Script (Forced Interactions)
 
 This script provides 5 forced interactions to demonstrate reliability, safety, retrieval grounding, tool usage behavior, and graceful failure handling.

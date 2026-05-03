@@ -8,7 +8,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.agent.baseline_agent import BaselineSupportAgent
+from src.phase2.baseline_agent import BaselineSupportAgent
 from src.observability.logger import SafeJsonLogger
 
 

@@ -31,8 +31,9 @@ PASS
 
 - Prompt comparison uses same test set with 2-3 variants: PASS
   - Evidence:
+    - final_submission/prompt_comparison_table.md
     - reports/phase3_prompt_comparison.md
-    - outputs/phase3/prompt_comparison_results.json
+    - phase_artifacts/phase3/outputs/prompt_comparison_results.json
   - Verification summary:
     - total rows = 18
     - variants = A, B, C
@@ -41,26 +42,26 @@ PASS
 - Concrete proof for retrieval, tool usage, memory, adaptation: PASS
   - Retrieval:
     - reports/phase4_rag_comparison.md
-    - outputs/phase4/rag_comparison_results.json
+    - phase_artifacts/phase4/outputs/rag_comparison_results.json
   - Tools:
     - reports/phase5_tool_usage_comparison.md
-    - outputs/phase5/tool_run_results.json
+    - phase_artifacts/phase5/outputs/tool_run_results.json
   - Memory:
     - reports/phase6_multiturn_comparison.md
-    - outputs/phase6/multiturn_results.json
+    - phase_artifacts/phase6/outputs/multiturn_results.json
   - Adaptation:
     - reports/phase7_adaptation_comparison.md
-    - outputs/phase7/adaptation_results.json
+    - phase_artifacts/phase7/outputs/adaptation_results.json
 
 - At least one failure case with root cause and before/after fix: PASS
   - Evidence:
     - reports/phase9_evaluation_report.md
-    - outputs/phase9/evaluation_metrics.json
+    - phase_artifacts/phase9/outputs/evaluation_metrics.json
 
 - Safety enforcement behavior demonstrated: PASS
   - Evidence:
-    - outputs/phase8/deployment_readiness_results.json
-    - outputs/phase9/evaluation_metrics.json
+    - phase_artifacts/phase8/outputs/deployment_readiness_results.json
+    - phase_artifacts/phase9/outputs/evaluation_metrics.json
 
 ## 3) Verification Gates
 
@@ -69,19 +70,19 @@ PASS
 
 - Safety checks pass: PASS
   - Refusal correctness: PASS
-    - Evidence: outputs/phase8/deployment_readiness_results.json (D8-06)
+    - Evidence: phase_artifacts/phase8/outputs/deployment_readiness_results.json (D8-06)
   - Anti-fabrication behavior: PASS
-    - Evidence: outputs/phase4/rag_comparison_results.json (R4-04)
+    - Evidence: phase_artifacts/phase4/outputs/rag_comparison_results.json (R4-04)
   - Escalation correctness: PASS
-    - Evidence: outputs/phase8/deployment_readiness_results.json, outputs/phase9/evaluation_metrics.json
+    - Evidence: phase_artifacts/phase8/outputs/deployment_readiness_results.json, phase_artifacts/phase9/outputs/evaluation_metrics.json
   - PII-safe logging: PASS
-    - Evidence: reports/evidence/phase2_pii_redaction_proof.txt, outputs/phase8/runtime_logs.jsonl
+    - Evidence: reports/evidence/phase2_pii_redaction_proof.txt, phase_artifacts/phase8/outputs/runtime_logs.jsonl
 
 - Demo script reproducible with saved logs and timestamps: PASS
   - Evidence:
     - final_submission/demo_script.md
-    - outputs/phase8/deployment_readiness_results.json
-    - outputs/phase8/runtime_logs.jsonl
+    - phase_artifacts/phase8/outputs/deployment_readiness_results.json
+    - phase_artifacts/phase8/outputs/runtime_logs.jsonl
 
 ## Completeness Check
 - Required artifact existence check: missing_count = 0
