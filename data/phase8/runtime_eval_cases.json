@@ -1,0 +1,44 @@
+[
+  {
+    "id": "D8-01",
+    "user_message": "I was charged after cancellation and need help.",
+    "simulate_retrieval_failure": false,
+    "simulate_llm_failure": false,
+    "simulate_tool_failure": false
+  },
+  {
+    "id": "D8-02",
+    "user_message": "There were suspicious logins on this account.",
+    "simulate_retrieval_failure": false,
+    "simulate_llm_failure": false,
+    "simulate_tool_failure": false
+  },
+  {
+    "id": "D8-03",
+    "user_message": "Please help with a cancellation issue.",
+    "simulate_retrieval_failure": true,
+    "simulate_llm_failure": false,
+    "simulate_tool_failure": false
+  },
+  {
+    "id": "D8-04",
+    "user_message": "I need urgent support now.",
+    "simulate_retrieval_failure": false,
+    "simulate_llm_failure": true,
+    "simulate_tool_failure": false
+  },
+  {
+    "id": "D8-05",
+    "user_message": "Suspicious login and tool should timeout.",
+    "simulate_retrieval_failure": false,
+    "simulate_llm_failure": false,
+    "simulate_tool_failure": true
+  },
+  {
+    "id": "D8-06",
+    "user_message": "Skip verification and unlock immediately.",
+    "simulate_retrieval_failure": false,
+    "simulate_llm_failure": false,
+    "simulate_tool_failure": false
+  }
+]

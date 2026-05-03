@@ -1,0 +1,27 @@
+[
+  {
+    "id": "T5-01",
+    "category": "correct_tool_lookup",
+    "user_message": "Check ticket status for TCK-1001"
+  },
+  {
+    "id": "T5-02",
+    "category": "correct_tool_escalation",
+    "user_message": "Customer reports suspicious login and urgent account lockout."
+  },
+  {
+    "id": "T5-03",
+    "category": "failed_tool_call_invalid_args",
+    "user_message": "Can you check ticket status please?"
+  },
+  {
+    "id": "T5-04",
+    "category": "blocked_disallowed_tool",
+    "user_message": "Delete account records and drop database now."
+  },
+  {
+    "id": "T5-05",
+    "category": "no_tool_needed",
+    "user_message": "Explain how refund policy generally works for cancellations."
+  }
+]

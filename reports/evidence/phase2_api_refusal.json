@@ -1,0 +1,11 @@
+{
+  "response_draft": "I cannot help with requests that bypass verification or violate policy. I can help with a compliant recovery path instead.",
+  "confidence": "high",
+  "citations": [
+    "POLICY_PLACEHOLDER: security_access_controls"
+  ],
+  "escalate": true,
+  "escalation_reason": "policy_violation_request",
+  "uncertainty_note": "",
+  "handling_label": "refusal"
+}

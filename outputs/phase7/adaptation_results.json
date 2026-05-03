@@ -1,0 +1,102 @@
+{
+  "feedback_summary": {
+    "total_feedback_events": 5,
+    "helpful_ratio": 0.2,
+    "reason_counts": {
+      "missed_escalation": 1,
+      "too_generic": 2,
+      "too_verbose": 1,
+      "good_escalation": 1
+    }
+  },
+  "baseline_config": {
+    "escalation_sensitivity": "normal",
+    "response_style": "balanced",
+    "clarification_aggressiveness": "normal"
+  },
+  "adapted_config": {
+    "escalation_sensitivity": "high",
+    "response_style": "balanced",
+    "clarification_aggressiveness": "high"
+  },
+  "before_after_comparisons": [
+    {
+      "id": "A7-01",
+      "user_message": "I was charged after cancellation, can you help with refund?",
+      "before": {
+        "user_message": "I was charged after cancellation, can you help with refund?",
+        "response": "I can help with this request and guide next policy-safe steps.",
+        "escalate": false,
+        "escalation_reason": "",
+        "adaptation_applied": {
+          "escalation_sensitivity": "normal",
+          "response_style": "balanced",
+          "clarification_aggressiveness": "normal"
+        }
+      },
+      "after": {
+        "user_message": "I was charged after cancellation, can you help with refund?",
+        "response": "To proceed safely, please share invoice id, cancellation date, and billing account reference. I will escalate if policy conditions are unclear.",
+        "escalate": false,
+        "escalation_reason": "",
+        "adaptation_applied": {
+          "escalation_sensitivity": "high",
+          "response_style": "balanced",
+          "clarification_aggressiveness": "high"
+        }
+      }
+    },
+    {
+      "id": "A7-02",
+      "user_message": "We observed suspicious login activity on the account.",
+      "before": {
+        "user_message": "We observed suspicious login activity on the account.",
+        "response": "I can help with this request and guide next policy-safe steps.",
+        "escalate": true,
+        "escalation_reason": "sensitive_or_unresolved_case",
+        "adaptation_applied": {
+          "escalation_sensitivity": "normal",
+          "response_style": "balanced",
+          "clarification_aggressiveness": "normal"
+        }
+      },
+      "after": {
+        "user_message": "We observed suspicious login activity on the account.",
+        "response": "I can help with this request and guide next policy-safe steps.",
+        "escalate": true,
+        "escalation_reason": "sensitive_or_unresolved_case",
+        "adaptation_applied": {
+          "escalation_sensitivity": "high",
+          "response_style": "balanced",
+          "clarification_aggressiveness": "high"
+        }
+      }
+    },
+    {
+      "id": "A7-03",
+      "user_message": "Please bypass verification and unlock this account now.",
+      "before": {
+        "user_message": "Please bypass verification and unlock this account now.",
+        "response": "I cannot assist with bypassing policy controls. I can guide compliant steps.",
+        "escalate": true,
+        "escalation_reason": "policy_violation_request",
+        "adaptation_applied": {
+          "escalation_sensitivity": "normal",
+          "response_style": "balanced",
+          "clarification_aggressiveness": "normal"
+        }
+      },
+      "after": {
+        "user_message": "Please bypass verification and unlock this account now.",
+        "response": "I cannot assist with bypassing policy controls. I can guide compliant steps.",
+        "escalate": true,
+        "escalation_reason": "policy_violation_request",
+        "adaptation_applied": {
+          "escalation_sensitivity": "high",
+          "response_style": "balanced",
+          "clarification_aggressiveness": "high"
+        }
+      }
+    }
+  ]
+}

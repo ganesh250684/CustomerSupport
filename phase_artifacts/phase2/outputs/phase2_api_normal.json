@@ -1,0 +1,11 @@
+{
+  "response_draft": "I can help review your billing issue. Please share the invoice id and cancellation date. If criteria match policy, a refund request can be submitted.",
+  "confidence": "medium",
+  "citations": [
+    "FAQ_PLACEHOLDER: billing_refunds"
+  ],
+  "escalate": false,
+  "escalation_reason": "",
+  "uncertainty_note": "",
+  "handling_label": "guided_resolution"
+}

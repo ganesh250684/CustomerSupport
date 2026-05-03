@@ -1,0 +1,16 @@
+{
+  "sources": {
+    "phase3_prompt_results": "outputs/phase3/prompt_comparison_results.json",
+    "phase4_rag_results": "outputs/phase4/rag_comparison_results.json",
+    "phase5_tool_results": "outputs/phase5/tool_run_results.json",
+    "phase7_adaptation_results": "outputs/phase7/adaptation_results.json",
+    "phase8_runtime_summary": "outputs/phase8/latency_error_summary.json",
+    "phase8_runtime_detailed": "outputs/phase8/deployment_readiness_results.json"
+  },
+  "evaluation_categories": [
+    "quality",
+    "consistency",
+    "safety",
+    "root_cause"
+  ]
+}

@@ -1,0 +1,5 @@
+{'timestamp_utc': '2026-05-03T12:24:19.446740+00:00', 'case_id': 'F7-01', 'user_message': 'There were suspicious logins and no escalation happened.', 'helpful': False, 'reason_tag': 'missed_escalation'}
+{'timestamp_utc': '2026-05-03T12:24:19.446766+00:00', 'case_id': 'F7-02', 'user_message': 'Your answer is too generic for refund handling.', 'helpful': False, 'reason_tag': 'too_generic'}
+{'timestamp_utc': '2026-05-03T12:24:19.446780+00:00', 'case_id': 'F7-03', 'user_message': 'Still too generic, ask me exact fields needed.', 'helpful': False, 'reason_tag': 'too_generic'}
+{'timestamp_utc': '2026-05-03T12:24:19.446788+00:00', 'case_id': 'F7-04', 'user_message': 'This response is too long.', 'helpful': False, 'reason_tag': 'too_verbose'}
+{'timestamp_utc': '2026-05-03T12:24:19.446793+00:00', 'case_id': 'F7-05', 'user_message': 'Good escalation behavior now.', 'helpful': True, 'reason_tag': 'good_escalation'}

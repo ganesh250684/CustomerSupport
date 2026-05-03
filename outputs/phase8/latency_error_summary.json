@@ -1,0 +1,15 @@
+{
+  "total_cases": 6,
+  "degraded_cases": 3,
+  "error_counts": {
+    "retrieval_failure": 1,
+    "llm_failure": 1,
+    "tool_failure": 1
+  },
+  "latency_ms": {
+    "min": 0.01,
+    "max": 0.31,
+    "avg": 0.14,
+    "p95": 0.26
+  }
+}

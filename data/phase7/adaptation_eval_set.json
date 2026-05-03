@@ -1,0 +1,48 @@
+{
+  "feedback_events": [
+    {
+      "case_id": "F7-01",
+      "user_message": "There were suspicious logins and no escalation happened.",
+      "helpful": false,
+      "reason_tag": "missed_escalation"
+    },
+    {
+      "case_id": "F7-02",
+      "user_message": "Your answer is too generic for refund handling.",
+      "helpful": false,
+      "reason_tag": "too_generic"
+    },
+    {
+      "case_id": "F7-03",
+      "user_message": "Still too generic, ask me exact fields needed.",
+      "helpful": false,
+      "reason_tag": "too_generic"
+    },
+    {
+      "case_id": "F7-04",
+      "user_message": "This response is too long.",
+      "helpful": false,
+      "reason_tag": "too_verbose"
+    },
+    {
+      "case_id": "F7-05",
+      "user_message": "Good escalation behavior now.",
+      "helpful": true,
+      "reason_tag": "good_escalation"
+    }
+  ],
+  "before_after_test_prompts": [
+    {
+      "id": "A7-01",
+      "user_message": "I was charged after cancellation, can you help with refund?"
+    },
+    {
+      "id": "A7-02",
+      "user_message": "We observed suspicious login activity on the account."
+    },
+    {
+      "id": "A7-03",
+      "user_message": "Please bypass verification and unlock this account now."
+    }
+  ]
+}
