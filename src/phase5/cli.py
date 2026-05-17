@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sys
+from dataclasses import asdict
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -9,14 +10,14 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.observability.logger import SafeJsonLogger
-from src.phase2.baseline_agent import BaselineSupportAgent
+from src.phase5.tool_agent import Phase5ToolAgent
 
 
 def main() -> None:
-    agent = BaselineSupportAgent()
-    logger = SafeJsonLogger("logs/phase2_interactions.jsonl")
+    agent = Phase5ToolAgent()
+    logger = SafeJsonLogger("logs/phase5_interactions.jsonl")
 
-    print("Phase 2 Baseline Support Agent")
+    print("Phase 5 Tool Agent CLI")
     print("Type 'exit' to quit.")
 
     while True:
@@ -25,17 +26,16 @@ def main() -> None:
             print("Exiting.")
             break
 
-        response = agent.respond(user_input)
-        response_json = response.to_dict()
+        result = asdict(agent.run_turn(user_input))
         print("Agent >")
-        print(json.dumps(response_json, indent=2))
+        print(json.dumps(result, indent=2))
 
         logger.write_event(
             {
                 "event": "interaction",
-                "phase": "phase2_baseline",
+                "phase": "phase5_tool_agent",
                 "user_input": user_input,
-                "agent_output": response_json,
+                "agent_output": result,
             }
         )
 
